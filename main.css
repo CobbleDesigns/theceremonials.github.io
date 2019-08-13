@@ -1,0 +1,332 @@
+ html, body{
+   
+ }
+  /*######## the navbar ########*/
+  #navbar{
+    transition: 0.5s;
+  }
+  .navbar{
+    padding: .8rem;
+    position: fixed; 
+    width: 100%;
+  }
+  .navbar-brand{
+    font-style: bold;
+  }
+  .navabr-nav li{
+    font-size: 1.1em !important;
+  }
+
+  /*########## The Parallax image ##########*/
+
+  .image-parallax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/art-blurred-background-bracelets-1444442.jpg);
+    background-size: cover;
+  }
+  .image-parallax h2{
+    font-size: 54px;
+    background: rgba(241, 238, 238, 0);
+    text-shadow: #222;
+    padding: 8px 24px;
+    border-radius: 5px;
+    color: rgb(231, 223, 206);
+    font-family: nunito, sans-serif;
+
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
+
+  /*---- the services part ----*/
+  .masonry__brick {
+    padding: 30px;
+  }
+  
+  .item-folio {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item-folio__thumb img {
+    vertical-align: bottom;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .item-folio__thumb a {
+    display: block;
+  }
+  
+  .item-folio__thumb a::before {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.384);
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .item-folio__thumb a::after {
+    content: "";
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.7rem;
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.911);
+    opacity: 0.3;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    z-index: 1;
+  }
+  
+  /* on hover 
+   * ----------------------------------------------- */
+  .item-folio:hover .item-folio__thumb a::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .item-folio:hover .item-folio__thumb a::after {
+    opacity: 0.3;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .item-folio:hover .item-folio__thumb img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  .item-folio:hover .item-folio:hover {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+  
+  .btn{
+    border-color: rgb(170, 167, 2);
+    color: rgb(170, 167, 2);
+    border-radius: 0px;
+    transition: 0.5s;
+    
+  }
+
+  .btn:hover{
+    fill: rgb(170, 167, 2);
+    color: white;
+    background-color: rgb(170, 167, 2);
+  }
+
+
+/*----- the gallary parallax -----*/
+
+.gallary-parallax{
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+  margin-left: 7%;
+  justify-content: center;
+  width: 85%;
+  height: 80vh;
+  background-image: url(images/family-reunion.jpg);
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+}
+
+.gallery-text{
+  color: rgb(170, 167, 2);
+  float:right;
+  text-align: center;
+  height: 380px;
+  width: 310px;
+  padding:10px;
+  opacity: 1;
+  padding: 25px;
+  margin-right: -61%;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+.gallery-text h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.btn-gallery{
+  border-color: rgb(170, 167, 2);
+  color: rgb(170, 167, 2);
+  border-radius: 0px;
+  margin-left: -20px;
+  transition: 0.5s;
+  
+}
+
+.btn-gallery:hover{
+  fill: rgb(170, 167, 2);
+  color: white;
+  background-color: rgb(170, 167, 2);
+}
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  .carousel-item{
+    align-content: center;
+    max-width: stretch;
+    max-height: 1500px;
+  
+  }
+  
+  /*--- Bootstrap Padding Fix --*/
+  [class*="col-"] {
+      padding: 1rem;
+  }
+  
+  /*--- About Us---*/
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  /* Slideshow container */
+.slideshow-container {
+  margin-top: 6%;
+  height: 50vh;
+  width: calc(100%-100px);
+  position: relative;
+  background: #fffffff1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  transition: 1s;
+  
+}
+.mySlides h2{
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  left: 100px;
+}
+.next {
+  position: absolute;
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+
+}
+
+/* Add a blue color to the author */
+.author {color: rgb(170, 145, 4);}

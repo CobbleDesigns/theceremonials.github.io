@@ -1,6 +1,6 @@
- html, body{
-   
- }
+html {
+  scroll-behavior: smooth;
+}
   /*######## the navbar ########*/
   #navbar{
     transition: 0.5s;
@@ -38,6 +38,16 @@
     font-family: nunito, sans-serif;
 
   }
+  i {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -46,16 +56,19 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(0, 0, 0); /* Set a background color */
-    color: white; /* Text color */
+    background-color: rgb(170, 167, 2); /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    padding-right: 20px;
+    padding-left: 20px; 
+    padding-top: 12px;
+    padding-bottom: 12px;/* Some padding */
+    transition: 1s;
+    border-radius: 50px; /* Rounded corners */
+     /* Increase font size */
   }
   
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: rgb(170, 145, 4); /* Add a dark-grey background on hover */
   }
   
 

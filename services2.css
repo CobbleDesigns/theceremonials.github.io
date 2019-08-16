@@ -1,0 +1,72 @@
+
+ .pimg1, .pimg2, .pimg3, .pimg4{
+	 position:relative;
+	 opacity: 0.8;
+	 background-position:center;
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	 background-attachment:fixed; 
+	 transform-style: preserve-3d;
+	 overflow-x: hidden;
+	 overflow-y: scroll;
+	 perspective: 1px;
+ }
+ 
+ .pimg1{
+	 background-image:url('images/DSC_0072-2-2.jpg');
+	 min-height:100%;
+ }
+ 
+ .pimg2{
+	 background-image:url('images/ec4ee6d019455684d07760eca0ae2bea.jpg');
+	 min-height:400px;
+ }
+ 
+ .pimg3{
+	 background-image:url('images/corporate-event-photographers-in-Mumbai--1024x682.jpg');
+	 min-height:400px;
+ }
+ 
+ .pimg4{
+	 background-image:url('images/plropx3t_0.jpg');
+	 min-height:400px;
+ }
+ 
+ .section{
+	 text-align:center;
+	 padding:50px 80px;
+ }
+ 
+ .section-light{
+	background-color:#f4f4f4;
+	color:#666;	
+ }
+ 
+ .section-light{
+	background-color:#282e34;
+	color:#ddd;	
+ }
+ 
+ .ptext{
+	 position:absolute;
+	 top:50%;
+	  width:100%;
+	 text-align:center;
+	 color:rgb(0,0,0,0.0);
+	 font-size:27px;
+	 letter-spacing:8px;
+	 text-transform:uppercase;
+	
+ }
+ 
+ .ptext .border{
+	 background-color:rgba(17, 17, 17, 0.199);
+	 color:#fff;
+	 padding:20px;
+	 border-radius: 7px;
+ }
+
+ 
+ .ptext .border .trans{
+	 background-color:transparent;
+ }

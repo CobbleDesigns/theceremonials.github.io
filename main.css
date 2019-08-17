@@ -3,7 +3,7 @@ html {
 }
   /*######## the navbar ########*/
   #navbar{
-    transition: 0.5s;
+    transition: 0.1s;
   }
   .navbar{
     padding: .8rem;
@@ -38,6 +38,7 @@ html {
     font-family: nunito, sans-serif;
 
   }
+  @
   i {
     border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;

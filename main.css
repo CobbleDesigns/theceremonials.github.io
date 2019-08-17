@@ -139,7 +139,7 @@ html {
   
   .item-folio__thumb a::before {
     display: block;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.24);
     content: "";
     opacity: 0;
     visibility: hidden;
@@ -155,37 +155,19 @@ html {
   
  
   .item-folio__thumb a::after {
-    content: "";
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.7rem;
-    display: block;
-    line-height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.911);
-    opacity: 0.3;
-    visibility: hidden;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-    z-index: 1;
-  }
-  
-  .item-folio__thumb-last a::after {
     content: "See more";
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.7rem;
+    font-size: 2rem;
+    padding: 5px;
     display: block;
     line-height: 30px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 18%;
+    top: 40%;
     text-align: center;
-    color: rgb(255, 255, 255);
+    background-color: rgba(15, 15, 15, 0.5);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.904);
     opacity: 0.3;
     visibility: hidden;
     -webkit-transition: all 0.5s ease-in-out;
@@ -204,7 +186,7 @@ html {
   }
   
   .item-folio:hover .item-folio__thumb a::after {
-    opacity: 0.3;
+    opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -253,6 +235,20 @@ html {
     margin-top: 5%;
   }
 
+
+  .btn{
+    border-color: rgb(170, 167, 2);
+    color: rgb(170, 167, 2);
+    border-radius: 0px;
+    transition: 0.5s;
+    
+  }
+
+  .btn:hover{
+    fill: rgb(170, 167, 2);
+    color: white;
+    background-color: rgb(170, 167, 2);
+  }
 /*----- the gallary parallax -----*/
 
 .gallery-parallax{

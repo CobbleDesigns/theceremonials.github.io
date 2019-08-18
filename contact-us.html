@@ -52,14 +52,14 @@
 		<h1 style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
 			Contact Us
 		</h1>
-			<form action="">
+			<form action="https://formspree.io/support@theceremonials.com" method="POST">>
 					<div class="form-group media-container-row" style="margin-top: 6%"> 
 							<label for="firstname" class="col-sm-2 control-label" style="
 						">First Name</label> 
 							<div class="col-sm-10 col-md-6 col-lg-4" style="
 						
 						"> 
-							<input type="text" class="form-control" id="firstname" placeholder="Enter First Name"> </div> </div>
+							<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name"> </div> </div>
 									<div class="form-group  media-container-row"> 
 							<label for="lname" class="col-sm-2 control-label" style="
 							
@@ -67,32 +67,26 @@
 									<div class="col-sm-10 col-md-6 col-lg-4" style="
 									
 								"> 
-							<input type="text" class="form-control" id="lastname" placeholder="Enter last Name"> 
+							<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter last Name"> 
 								</div> 
 							</div>
 								<div class="form-group  media-container-row"> 
-							<label for="add" class="col-sm-2 control-label" style="
-							
-						">E-mail</label> 
-							<div class="col-sm-10 col-md-6 col-lg-4" style="
-							
-						"> 
-							<input type="text" class="form-control" id="address" placeholder="someone@example.com"> 
+							<label for="add" class="col-sm-2 control-label">
+								E-mail</label> 
+							<div class="col-sm-10 col-md-6 col-lg-4"> 
+							<input type="text" class="form-control" id="address" name="_replyto" placeholder="someone@example.com"> 
 								</div>
 							 </div>
 							 <div class="form-group  media-container-row "> 
-									<label for="add" class="col-sm-2 control-label" style="
-								
-								">Phone Number</label> 
-									<div class="col-sm-10 col-md-6 col-lg-4" style="
-									
-								"> 
-									<input type="text" class="form-control" id="phoneNumber" placeholder="XXXXXXXXXX"> 
+									<label for="add" class="col-sm-2 control-label">
+										Phone Number</label> 
+									<div class="col-sm-10 col-md-6 col-lg-4"> 
+									<input type="text" class="form-control" id="phoneNumber" name="phone" placeholder="XXXXXXXXXX"> 
 										</div>
 									 </div>
 							
 									 <div class="buttons" align="center">
-											<input type="submit" style="background: #a38934" value="Submit" class="btn btn-primary">
+											<input type="submit" value="submit" class="btn btn-primary">
 											<input type="reset" style="background: white" class="btn btn-secondary" >
 									 </div>
 									 

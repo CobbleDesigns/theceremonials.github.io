@@ -36,6 +36,9 @@ html {
     font-family: nunito, sans-serif;
 
   }
+  .tag{
+    text-align:inherit; 
+  }
   @media screen and (min-width: 480px) {
     .image-parallax{
     display: flex;
@@ -46,6 +49,10 @@ html {
     background-image: url(images/art-blurred-background-bracelets-1444442.jpg);
     background-size: cover;
   
+    }
+
+    .tag{
+      margin-left: 15%;
     }
 
   }

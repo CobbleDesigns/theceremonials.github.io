@@ -37,6 +37,12 @@ html {
     font-family: nunito, sans-serif;
 
   }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+  }
   .tag{
     text-align:inherit; 
   }
@@ -51,7 +57,12 @@ html {
     background-size: cover;
   
     }
-
+    h3{
+      font-size: 26px;
+    }
+    p{
+      font-size: 18px;
+    }
     .tag{
       margin-left: 15%;
     }
